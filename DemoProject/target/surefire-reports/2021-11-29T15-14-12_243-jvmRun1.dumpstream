@@ -1,0 +1,10 @@
+# Created at 2021-11-29T15:14:17.328
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Active code page: 850'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'Active code page: 850'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.lang.Thread.run(Thread.java:748)
+
+
